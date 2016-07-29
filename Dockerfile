@@ -1,6 +1,6 @@
 # Run with
 #
-#  docker run -t -v ~/.ssh:/root/.ssh -v $(pwd):/repos rhuss/git_clone_github_orga "fabric8-quickstarts"
+#  docker run -it -v ~/.ssh:/root/.ssh -v $(pwd):/repos rhuss/clone_github_orga "fabric8-quickstarts"
 
 FROM perl:5.20
 VOLUME ["/repos"]
