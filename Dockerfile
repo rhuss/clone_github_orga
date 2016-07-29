@@ -5,6 +5,6 @@
 FROM perl:5.20
 VOLUME ["/repos"]
 RUN cpanm install Pithub Git::Repository
-COPY git_clone_github_orga.pl /
+COPY clone_github_orga.pl /
 WORKDIR /repos
-ENTRYPOINT [ "perl", "/git_clone_github_orga.pl" ]
+ENTRYPOINT [ "perl", "/clone_github_orga.pl" ]
